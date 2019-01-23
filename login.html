@@ -54,6 +54,56 @@ body {font-size:16px;}
 
 
 
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+img.two {
+  height: 10%;
+  width: 10%;
+}
+
+
 
 </style>
 <body background="pattern.jpg">
@@ -100,58 +150,30 @@ body {font-size:16px;}
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px  width:80% b" id="showcase"  >
     <h1 class="w3-jumbo"><b>The CogniBank</b></h1>
-    <h1 class="w3-xxxlarge w3-text-red"><b>Welcome!</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-<p style="background-color:#FBF9F8">The CogniBank, a leading financial services group headquartered in India, operates across 18 Countries.  
-A frontrunner in digital transformation, we seek to deliver a new kind of banking that is so simple, secured 
-and invisible, that customers have more time to spend on the people or things they care about.
- We invite you to be part of the journey to Live more, Bank less.</p>
+	<form action="/action_page.php">
+  <div class="imgcontainer">
+    <img class="two" src="user.png" alt="Avatar" class="avatar" height="42" px width="42">
   </div>
-  
-  <!-- Photo grid (modal) -->
-  
 
-  <!-- Services -->
-  <div class="w3-container" id="services" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Services.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+  <div class="container">
+<center>
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required><br>
 
-
-     <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="banking.jpg" alt="banking" style="width:95%">
-        <div class="w3-container">
-          <h3>Banking</h3>
-          <p class="w3-opacity"></p>
-          <p>Banking as it is never before</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="transaction.jpeg" alt="transaction" style="width:100%">
-        <div class="w3-container">
-          <h3>Transaction</h3>
-          <p class="w3-opacity"></p>
-          <p>Smart and secured transaction</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="loan.jpg" alt="loan" style="width:100%">
-        <div class="w3-container">
-          <h3>Loans</h3>
-          <p class="w3-opacity"></p>
-          <p>A friend you can trust</p>
-        </div>
-      </div>
-    </div>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required><br>
+        
+    <button type="submit">Login</button>
+</center>
+    
   </div>
-  
 
-
+  <div class="container" style="background-color:#f1f1f1">
+   
+   
+  </div>
+</form>
+    
 
   </div>
   
